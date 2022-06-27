@@ -81,9 +81,6 @@ const check = async page => {
   await tryToFindAvailableDate(page);
 };
 
-/**
- * @param {import('playwright').Page} page
- */
 const runChecker = (page) => new Promise(() => {
   check(page);
 });
